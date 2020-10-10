@@ -1,0 +1,15 @@
+<resources>
+    <!-- 自定义CustomDialog(对话框)-->
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <!--加载中...-->
+    <style name="ProgressDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@drawable/gray_conner_shape</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+</resources>

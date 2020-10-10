@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_20">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/no_border_normal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_16"
+            android:textColor="@color/common_tv_black"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:id="@+id/message"
+                android:textSize="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingBottom="@dimen/dp_15"
+                android:paddingLeft="@dimen/dp_20"
+                android:textColor="@color/common_tv_gray"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingTop="@dimen/dp_15" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerline" />
+
+        <LinearLayout
+            android:id="@+id/ll_buttom"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_65"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/negative_button"
+                android:layout_width="@dimen/dp_140"
+                android:layout_height="@dimen/dp_60"
+                android:drawableLeft="@null"
+                android:layout_weight="1"
+                android:textColor="@color/common_tv_gray"
+                android:textSize="@dimen/dp_14"
+                android:gravity="center"
+                android:background="@null"
+                android:text="@string/customui_cancel" />
+            <View
+                android:id="@+id/divider"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/dividerline" />
+            <Button
+                android:id="@+id/positive_button"
+                android:layout_width="@dimen/dp_140"
+                android:layout_height="@dimen/dp_60"
+                android:drawableLeft="@null"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColor="@color/common_tv_gold"
+                android:textSize="@dimen/dp_14"
+                android:gravity="center"
+                android:text="@string/customui_ensure" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

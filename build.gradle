@@ -3,8 +3,13 @@
 buildscript {
     
     repositories {
-        google()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven{ url "https://maven.aliyun.com/repository/jcenter"}
         jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'http://maven.fabric.io/public' }
+        google()
         
     }
     dependencies {
@@ -18,9 +23,14 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven{ url "https://maven.aliyun.com/repository/jcenter"}
         jcenter()
-        
+        maven { url "https://jitpack.io" }
+        maven { url 'http://maven.fabric.io/public' }
+        google()
+
     }
 }
 
